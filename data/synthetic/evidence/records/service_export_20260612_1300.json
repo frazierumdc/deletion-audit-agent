@@ -1,0 +1,41 @@
+{
+  "exported_at": "2026-06-12T13:00:00Z",
+  "source": "service_resource_export",
+  "service_exports": {
+    "search_service": {
+      "index_queries": [
+        {
+          "observed_at": "2026-06-12T12:10:00Z",
+          "query": "jules.mockup@example.net",
+          "resource_id": "search_1902",
+          "hits": {
+            "documents": [
+              {
+                "resource_id": "search_1902",
+                "display_name": "Jules Mockup",
+                "email": "jules.mockup@example.net",
+                "customer_reference": null
+              }
+            ],
+            "total": 1
+          }
+        },
+        {
+          "observed_at": "2026-06-12T12:11:00Z",
+          "query": "jules.mockup2@example.net",
+          "resource_id": "search_1909",
+          "hits": {
+            "documents": [
+              {
+                "resource_id": "search_1909",
+                "display_name": "Jules Mockup",
+                "email": "jules.mockup2@example.net"
+              }
+            ],
+            "total": 1
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2 @@
+2026-03-20T11:00:01Z {"service": "backup_service", "trace_id": "tr-1300", "level": "DEBUG", "event": "restore_policy_read_started", "lookup_key": "devon.test@example.com"}
+2026-03-20T11:00:02Z {"service": "backup_service", "trace_id": "tr-1300", "level": "INFO", "event": "restore_policy_read_completed", "resource_id": "backup_1302", "archive_present": true, "restore_allowed": true}

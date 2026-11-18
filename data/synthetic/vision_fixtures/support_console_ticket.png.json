@@ -1,0 +1,101 @@
+{
+  "schema": "vision_extraction/v1",
+  "model": "fixture",
+  "status": "ok",
+  "extraction": {
+    "schema": "vision_extraction/v1",
+    "artifact": {
+      "kind": "screenshot",
+      "product": null,
+      "title": "TCK-0412 support console",
+      "subtitle": null,
+      "pages": 1,
+      "as_of": null,
+      "status_text": [],
+      "filters": [],
+      "page_subject": {
+        "names": [
+          "Gray Fixture"
+        ],
+        "emails": [
+          "gray.fixture@example.com"
+        ],
+        "phones": [],
+        "user_ids": [],
+        "hashes": [],
+        "resource_ids": [
+          "support_1603"
+        ],
+        "labels": [
+          "TCK-0412"
+        ]
+      },
+      "tables": [
+        {
+          "title": "Conversation",
+          "declared_count": null,
+          "rows_extracted": 1
+        }
+      ]
+    },
+    "records": [
+      {
+        "where": "header",
+        "table": null,
+        "row": null,
+        "resource_id": "support_1603",
+        "labels": [
+          "TCK-0412"
+        ],
+        "identifiers": {
+          "names": [
+            "Gray Fixture"
+          ],
+          "emails": [
+            "gray.fixture@example.com"
+          ],
+          "phones": [],
+          "user_ids": [],
+          "hashes": []
+        },
+        "part_of_page_subject": true,
+        "fields": {
+          "Status": "Open"
+        },
+        "status_text": [
+          "Open"
+        ],
+        "state_hints": [],
+        "timestamps": []
+      },
+      {
+        "where": "table",
+        "table": "Conversation",
+        "row": 1,
+        "resource_id": null,
+        "labels": [],
+        "identifiers": {
+          "names": [
+            "Gray Fixture"
+          ],
+          "emails": [],
+          "phones": [],
+          "user_ids": [],
+          "hashes": []
+        },
+        "part_of_page_subject": true,
+        "fields": {
+          "Message": "Please send the replacement to my new address."
+        },
+        "status_text": [],
+        "state_hints": [],
+        "timestamps": []
+      }
+    ],
+    "events": [],
+    "unreadable": []
+  },
+  "errors": [],
+  "usage": [],
+  "note": "Hand-written transcription of a synthetic file; stands in for the vision call."
+}

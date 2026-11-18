@@ -1,0 +1,41 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ""  # CI never calls the API
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: pip
+      - name: Install
+        run: |
+          python -m pip install -r requirements.txt -r requirements-dev.txt
+          python -m pip install -e . --no-deps
+      - name: Lint
+        run: |
+          ruff check .
+          ruff format --check .
+      - name: Test
+        run: pytest
+      - name: Rules engine on synthetic data
+        run: |
+          python -m deletion_audit --engine rules
+          python -m deletion_audit.evaluation.regression --validate out/output.csv
+      - name: Agent pipeline, offline
+        run: python -m deletion_audit --engine agent --offline
+      - name: Evaluate and leak check
+        run: |
+          python -m deletion_audit.evaluation.score --engine both --custom --offline
+          python -m deletion_audit.evaluation.leak_check

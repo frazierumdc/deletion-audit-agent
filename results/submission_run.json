@@ -1,0 +1,44 @@
+{
+  "_note": "Aggregate numbers from the original October 2026 submission, copied from its usage and evaluation reports. The challenge dataset is not in this repository, so these numbers cannot be reproduced here. Costs are estimates from logged token counts at list prices, not invoices.",
+  "event": "HackerRank Orchestrate, October 2026 (24-hour individual challenge)",
+  "result": {
+    "medal": "bronze",
+    "official_final_rank": 363,
+    "entrants_in_final_ranking": 4090,
+    "top_percent": 9,
+    "source": "HackerRank's final leaderboard (not in this repository)"
+  },
+  "full_run": {
+    "requests": 518,
+    "started_utc": "2026-10-24T23:50:08Z",
+    "finished_utc": "2026-10-25T00:31:35Z",
+    "wall_clock_minutes": 41.5,
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "concurrency": 8,
+    "model_calls": 8303,
+    "investigation_calls": 8288,
+    "vision_calls": 15,
+    "calls_per_request": 16.0,
+    "answers_passing_checks_first_try": 518,
+    "reflection_retries": 0,
+    "rules_fallbacks": 0,
+    "input_tokens": 76158883,
+    "cache_read_tokens": 71311730,
+    "cache_read_share_of_input": 0.936,
+    "output_tokens": 1139019,
+    "total_tokens": 77297902,
+    "estimated_cost_usd": 61.22,
+    "estimated_cost_per_request_usd": 0.1182,
+    "price_per_million_tokens_usd": {"input": 4.0, "cache_read": 0.2, "cache_write": 5.0, "output": 20.0}
+  },
+  "solved_samples_development_set": {
+    "cases": 32,
+    "agent": {"status_accuracy": 1.0, "row_accuracy": 0.625, "step_precision": 0.984, "step_recall": 0.927, "step_f1": 0.955},
+    "rules_engine": {"status_accuracy": 1.0, "row_accuracy": 0.625, "step_precision": 0.962, "step_recall": 0.927, "step_f1": 0.945},
+    "rules_engine_row_accuracy_if_time_rule_broken": 0.75,
+    "caveat": "These 32 cases were also the development set, so the scores are optimistic."
+  },
+  "time_rule_leak_check": {"cutoffs": 72, "cases": 550, "answers_changed": 0},
+  "build": {"tool": "Claude Code", "phases": 10, "first_phase_commit_utc": "2026-10-24T21:50:45Z", "last_phase_commit_utc": "2026-10-25T00:41:14Z"}
+}

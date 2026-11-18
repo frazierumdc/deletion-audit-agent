@@ -1,0 +1,36 @@
+{
+  "exported_at": "2026-03-06T12:00:00Z",
+  "source": "service_resource_export",
+  "service_exports": {
+    "integration_service": {
+      "connectors": [
+        {
+          "observed_at": "2026-03-06T11:05:00Z",
+          "resource_id": "data_flow_1202",
+          "customer_reference": "user_03",
+          "customer_email": "casey.demo@example.org",
+          "connector_name": "crm_contact_sync",
+          "enabled": true
+        }
+      ]
+    },
+    "search_service": {
+      "index_queries": [
+        {
+          "observed_at": "2026-03-06T11:09:00Z",
+          "query": "casey.demo@example.org",
+          "resource_id": "search_1203",
+          "hits": {
+            "documents": [
+              {
+                "resource_id": "search_1203",
+                "email": "casey.demo@example.org"
+              }
+            ],
+            "total": 1
+          }
+        }
+      ]
+    }
+  }
+}

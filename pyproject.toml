@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deletion-audit"
+version = "1.0.0"
+description = "Ghost-data deletion audit: Claude judges evidence, code calculates state and remediation steps."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Sean Frazier" }]
+requires-python = ">=3.12"
+dependencies = ["aisuite[anthropic]==0.2.0", "anthropic==0.125.0", "python-dotenv==1.2.4"]
+
+[project.scripts]
+deletion-audit = "deletion_audit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+deletion_audit = ["prompts/*.md", "py.typed"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "tests"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["E501"]  # the formatter owns line length; long string literals stay whole
+
+[tool.ruff.lint.isort]
+known-first-party = ["deletion_audit"]
+known-third-party = ["fakes"]

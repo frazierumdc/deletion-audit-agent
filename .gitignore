@@ -1,0 +1,24 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+
+# Run outputs: model-answer cache, usage logs, predictions
+.cache/
+runs/
+out/
+
+.DS_Store
+.claude/settings.local.json

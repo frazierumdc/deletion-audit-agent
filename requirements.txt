@@ -1,0 +1,5 @@
+# Runtime, pinned. These are the versions the submitted run used.
+# If you change one, re-run the offline contract tests: pytest tests/test_aisuite_contract.py
+aisuite[anthropic]==0.2.0
+anthropic==0.125.0
+python-dotenv==1.2.4

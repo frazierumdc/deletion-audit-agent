@@ -1,0 +1,4 @@
+# Development tooling, pinned. Pillow is used only by the synthetic-data generator (the PNG).
+pytest==9.2.0
+ruff==0.17.5
+pillow==13.0.0

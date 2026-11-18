@@ -1,0 +1,3 @@
+Account handover note (synthetic)
+ts | system | resource | type | result | key
+- 2026-05-15T13:00:00Z | identity_service | tombstone_1702 | ACCOUNT_TOMBSTONE | IDENTIFIABLE | harper.stub@example.net

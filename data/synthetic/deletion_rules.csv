@@ -1,0 +1,16 @@
+rule_id,data_category,condition,required_action
+rule_01,USER_PROFILE,Primary customer profile,DELETE
+rule_02,SECONDARY_IDENTIFIER,Extra contact point stored outside the profile,DELETE
+rule_03,SEARCH_INDEX_ENTRY,Customer document in a search index,DELETE
+rule_04,CACHE_ENTRY,Cached copy of profile data,DELETE
+rule_05,SUPPORT_MESSAGE,Conversation also holds agent or order context,REDACT
+rule_06,SUPPORT_ATTACHMENT,File uploaded by the customer,DELETE
+rule_07,ANALYTICS_PROFILE,Behavioural profile kept for aggregate reporting,ANONYMIZE
+rule_08,PRODUCT_TELEMETRY,Usage events kept for aggregate reporting,ANONYMIZE
+rule_09,USER_EXPORT,Data export prepared for the customer,DELETE
+rule_10,MARKETING_PROFILE,Marketing audience membership,DELETE
+rule_11,EMAIL_DELIVERY_LOG,Delivery record kept for sending reputation,REDACT
+rule_12,SECURITY_AUDIT_LOG,Security event under a retention obligation,RETAIN
+rule_13,LEGAL_HOLD_RECORD,Record under legal hold,RETAIN
+rule_14,BACKUP_ARCHIVE,Backup kept intact; restores must be blocked,RETAIN
+rule_15,ACCOUNT_TOMBSTONE,Marker that keeps only the stable user id,REDACT

@@ -1,0 +1,41 @@
+activity_id,event_time,event_type,source_system,target_system,resource_id,reported_result,details
+activity_001,2026-02-03T11:07:01Z,LINK_RESOURCE_IDENTITY,data_catalog,security_service,audit_record_1003,SUCCESS,Data catalog linked audit_record_1003 (audit_record_1003) to avery.lane@example.com and user_01.
+activity_002,2026-02-04T09:00:12Z,DELETE_RECORD,deletion_worker,account_service,account_1001,SUCCESS,Deletion worker submitted primary profile account_1001 to account_service.
+activity_003,2026-02-04T09:40:22Z,ANONYMIZE_RECORD,deletion_worker,analytics_platform,analytics_1002,SUCCESS,Policy action completed for analytics_1002.
+activity_004,2026-02-04T09:50:40Z,RETAIN_RECORD,deletion_worker,security_service,audit_record_1003,SUCCESS,Retention policy kept audit_record_1003 under the security retention rule.
+activity_005,2026-02-11T10:00:30Z,INDEX_RECORD,account_service,search_service,search_1102,SUCCESS,Customer search-index refresh processed search_1102.
+activity_006,2026-02-18T09:00:12Z,DELETE_RECORD,deletion_worker,account_service,account_1101,SUCCESS,Deletion worker submitted primary profile account_1101 to account_service.
+activity_007,2026-02-18T09:40:22Z,DELETE_RECORD,deletion_worker,search_service,search_1102,SUCCESS,Policy action completed for search_1102.
+activity_008,2026-02-18T10:02:05Z,DELETE_RECORD,deletion_worker,export_service,export_1103,SUCCESS,Deletion worker reported the requested operation as completed for export_1103.
+activity_009,2026-03-04T09:00:12Z,DELETE_RECORD,deletion_worker,account_service,account_1201,SUCCESS,Deletion worker submitted primary profile account_1201 to account_service.
+activity_010,2026-03-04T09:40:22Z,DELETE_RECORD,deletion_worker,search_service,search_1203,SUCCESS,Policy action completed for search_1203.
+activity_011,2026-03-04T09:41:22Z,DISABLE_DATA_FLOW,deletion_worker,integration_service,data_flow_1202,SUCCESS,Policy action completed for data_flow_1202.
+activity_012,2026-03-04T10:45:03Z,CHECK_DATA_FLOW,deletion_worker,integration_service,data_flow_1202,SUCCESS,Connector status check confirmed that data flow data_flow_1202 remains enabled.
+activity_013,2026-03-04T13:00:00Z,SYNC_RECORD,integration_service,search_service,data_flow_1202,SUCCESS,Active connector repopulated downstream resource search_1203.
+activity_014,2026-03-18T09:00:12Z,DELETE_RECORD,deletion_worker,account_service,account_1301,SUCCESS,Deletion worker submitted primary profile account_1301 to account_service.
+activity_015,2026-03-18T09:40:22Z,BLOCK_RESTORE,deletion_worker,backup_service,backup_1302,SUCCESS,Policy action completed for backup_1302.
+activity_016,2026-03-18T10:45:03Z,CHECK_RESTORE_ACCESS,deletion_worker,backup_service,backup_1302,SUCCESS,Restore-access check confirmed that archive backup_1302 can still be restored.
+activity_017,2026-04-15T09:00:12Z,DELETE_RECORD,deletion_worker,account_service,account_1501,SUCCESS,Deletion worker submitted primary profile account_1501 to account_service.
+activity_018,2026-04-15T09:40:22Z,ANONYMIZE_RECORD,deletion_worker,analytics_platform,analytics_1502,SUCCESS,Policy action completed for analytics_1502.
+activity_019,2026-04-29T09:00:12Z,DELETE_RECORD,deletion_worker,account_service,account_1601,SUCCESS,Deletion worker submitted primary profile account_1601 to account_service.
+activity_020,2026-04-29T11:15:03Z,REDACT_RECORD,deletion_worker,support_platform,support_1603,SUCCESS,Deletion worker received the final result for support_1603 from support_platform.
+activity_021,2026-04-30T10:07:01Z,LINK_RESOURCE_IDENTITY,data_catalog,support_platform,support_1602,SUCCESS,Data catalog linked support_1602 (delivery_photo_upload.pdf) to gray.fixture@example.com and user_07.
+activity_022,2026-05-13T09:00:12Z,DELETE_RECORD,deletion_worker,account_service,account_1701,SUCCESS,Deletion worker submitted primary profile account_1701 to account_service.
+activity_023,2026-05-13T09:40:22Z,ANONYMIZE_RECORD,deletion_worker,analytics_platform,analytics_1703,SUCCESS,Policy action completed for analytics_1703.
+activity_024,2026-05-13T11:15:03Z,REDACT_RECORD,deletion_worker,identity_service,tombstone_1702,SUCCESS,Deletion worker received the final result for tombstone_1702 from identity_service.
+activity_025,2026-05-14T10:07:01Z,LINK_RESOURCE_IDENTITY,data_catalog,identity_service,tombstone_1702,SUCCESS,Data catalog linked tombstone_1702 (user_08) to harper.stub@example.net and user_08.
+activity_026,2026-05-26T11:07:01Z,LINK_RESOURCE_IDENTITY,data_catalog,security_service,audit_record_1803,SUCCESS,Data catalog linked audit_record_1803 (audit_record_1803) to indigo.draft@example.com and user_11.
+activity_027,2026-05-27T09:00:12Z,DELETE_RECORD,deletion_worker,account_service,account_1801,SUCCESS,Deletion worker submitted primary profile account_1801 to account_service.
+activity_028,2026-05-27T09:40:22Z,ANONYMIZE_RECORD,deletion_worker,analytics_platform,analytics_1802,SUCCESS,Policy action completed for analytics_1802.
+activity_029,2026-05-27T09:50:40Z,RETAIN_RECORD,deletion_worker,security_service,audit_record_1803,SUCCESS,Retention policy kept audit_record_1803 under the security retention rule.
+activity_030,2026-06-03T10:00:30Z,INDEX_RECORD,account_service,search_service,search_1902,SUCCESS,Customer search-index refresh processed search_1902.
+activity_031,2026-06-10T09:00:12Z,DELETE_RECORD,deletion_worker,account_service,account_1901,SUCCESS,Deletion worker submitted primary profile account_1901 to account_service.
+activity_032,2026-06-10T09:40:22Z,DELETE_RECORD,deletion_worker,search_service,search_1902,SUCCESS,Policy action completed for search_1902.
+activity_033,2026-06-10T10:02:05Z,DELETE_RECORD,deletion_worker,export_service,export_1903,SUCCESS,Deletion worker reported the requested operation as completed for export_1903.
+activity_034,2026-06-24T09:00:12Z,DELETE_RECORD,deletion_worker,account_service,account_2001,SUCCESS,Deletion worker submitted primary profile account_2001 to account_service.
+activity_035,2026-06-24T09:40:22Z,BLOCK_RESTORE,deletion_worker,backup_service,backup_2002,SUCCESS,Policy action completed for backup_2002.
+activity_036,2026-06-24T10:45:03Z,CHECK_RESTORE_ACCESS,deletion_worker,backup_service,backup_2002,SUCCESS,Restore-access check confirmed that archive backup_2002 can still be restored.
+activity_037,2026-07-08T09:00:12Z,DELETE_RECORD,deletion_worker,account_service,account_2101,SUCCESS,Deletion worker submitted primary profile account_2101 to account_service.
+activity_038,2026-07-08T09:40:22Z,ANONYMIZE_RECORD,deletion_worker,analytics_platform,analytics_2103,SUCCESS,Policy action completed for analytics_2103.
+activity_039,2026-07-08T11:15:03Z,REDACT_RECORD,deletion_worker,identity_service,tombstone_2102,SUCCESS,Deletion worker received the final result for tombstone_2102 from identity_service.
+activity_040,2026-07-09T10:07:01Z,LINK_RESOURCE_IDENTITY,data_catalog,identity_service,tombstone_2102,SUCCESS,Data catalog linked tombstone_2102 (user_14) to lane.sketch@example.com and user_14.

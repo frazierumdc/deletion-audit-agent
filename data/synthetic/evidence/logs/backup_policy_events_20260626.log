@@ -1,0 +1,2 @@
+2026-06-26T11:00:01Z {"service": "backup_service", "trace_id": "tr-2000", "level": "DEBUG", "event": "restore_policy_read_started", "lookup_key": "kai.prototype@example.org"}
+2026-06-26T11:00:02Z {"service": "backup_service", "trace_id": "tr-2000", "level": "INFO", "event": "restore_policy_read_completed", "resource_id": "backup_2002", "archive_present": true, "restore_allowed": true}

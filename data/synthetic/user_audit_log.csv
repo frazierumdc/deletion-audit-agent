@@ -1,0 +1,4 @@
+audit_id,user_id,event_time,field_name,old_value,new_value
+audit_01,user_03,2025-11-04T09:00:00Z,email,casey.d.old@example.org,casey.demo@example.org
+audit_02,user_03,2025-11-04T09:00:00Z,email_hash,dcc5eb748983da5bd02486a2d228d9b56d43af15d8d963b4547b02fdc97af7a6,03388e21d08e94f2fa52ce8edd9860bfa8f398d29d2c5065f542cb314387113c
+audit_03,user_04,2025-07-17T09:00:00Z,phone,+1 202 555 0199,+1 202 555 0104

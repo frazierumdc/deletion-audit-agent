@@ -1,0 +1,13 @@
+-- Synthetic point-in-time database snapshot (fictional data)
+-- Captured at: 2026-01-28T09:00:00Z
+-- Topology: primary
+BEGIN TRANSACTION;
+CREATE TABLE snapshot_scope (origin_system TEXT PRIMARY KEY, captured_at TEXT NOT NULL);
+INSERT INTO snapshot_scope VALUES('account_service','2026-01-28T09:00:00Z');
+INSERT INTO snapshot_scope VALUES('analytics_platform','2026-01-28T09:00:00Z');
+INSERT INTO snapshot_scope VALUES('security_service','2026-01-28T09:00:00Z');
+CREATE TABLE customer_data_primary (resource_id TEXT PRIMARY KEY, origin_system TEXT NOT NULL, collection_name TEXT NOT NULL, record_json TEXT NOT NULL, updated_at TEXT NOT NULL);
+INSERT INTO customer_data_primary VALUES('account_1001','account_service','customer_profiles','{"resource_id":"account_1001","customer_reference":"user_01","full_name":"Avery Lane","email":"avery.lane@example.com","phone":"+1 202 555 0101","account_status":"ACTIVE"}','2026-01-28T09:00:00Z');
+INSERT INTO customer_data_primary VALUES('analytics_1002','analytics_platform','customer_analytics_profiles','{"resource_id":"analytics_1002","customer_reference":"user_01","email":"avery.lane@example.com","audience_cohort":"home_and_garden"}','2026-01-28T09:00:00Z');
+INSERT INTO customer_data_primary VALUES('audit_record_1003','security_service','security_audit_records','{"resource_id":"audit_record_1003","subject_reference":"user_01","event_code":"PASSWORD_RESET_COMPLETED","retention_until":"2033-12-31T23:59:59Z"}','2026-01-28T09:00:00Z');
+COMMIT;
